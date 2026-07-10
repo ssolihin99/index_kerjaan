@@ -101,8 +101,13 @@
 
   .empty { text-align: center; color: var(--muted); padding: 40px 0; display: none; font-size: 12px; letter-spacing: 1px; }
 
-  footer { text-align: center; color: var(--muted); font-size: 11px; margin-top: 60px; letter-spacing: .5px; }
-  footer a { color: var(--amber); text-decoration: none; }
+  footer {
+    text-align: center; color: var(--muted); font-size: 11px; letter-spacing: 1px;
+    margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border);
+    text-transform: uppercase;
+  }
+  footer a { color: var(--amber); text-decoration: none; letter-spacing: normal; text-transform: none; }
+  footer a:hover { text-decoration: underline; }
 
   @media (max-width: 480px) {
     header { padding-top: 40px; }
@@ -167,7 +172,7 @@
   <div class="empty" id="empty">// NO MATCHING RECORDS</div>
 
   <footer>
-    Dibuat oleh SSolihin99@gmail.com  
+    System maintained by <a href="mailto:ssolihin99@gmail.com">ssolihin99@gmail.com</a>
   </footer>
 
 </div>
